@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Introduction to Dyte | Best Flutter Boilerplate</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://bestflutterboilerplate.com/img/dyte-docs-card.png"><meta data-rh="true" name="twitter:image" content="https://bestflutterboilerplate.com/img/dyte-docs-card.png"><meta data-rh="true" property="og:url" content="https://bestflutterboilerplate.com/getting-started"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Introduction to Dyte | Best Flutter Boilerplate"><meta data-rh="true" name="description" content="A short guide on how to integrate dyte and how dyte works with your application"><meta data-rh="true" property="og:description" content="A short guide on how to integrate dyte and how dyte works with your application"><link data-rh="true" rel="icon" href="/favicon.ico"><link data-rh="true" rel="canonical" href="https://bestflutterboilerplate.com/getting-started"><link data-rh="true" rel="alternate" href="https://bestflutterboilerplate.com/getting-started" hreflang="en"><link data-rh="true" rel="alternate" href="https://bestflutterboilerplate.com/getting-started" hreflang="x-default"><link data-rh="true" rel="stylesheet" href="/assets/css/docsly.min.css"><link rel="search" type="application/opensearchdescription+xml" title="Best Flutter Boilerplate" href="/opensearch.xml">
+
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG69TMGXPW"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-GG69TMGXPW",{})</script>
+
+
+<script src="https://cdn.statuspage.io/se-v2.js" async></script><link rel="stylesheet" href="/assets/css/styles.d7a6eef1.css">
+<script src="/assets/js/runtime~main.084a5aac.js" defer="defer"></script>
+<script src="/assets/js/main.d6212d5d.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/logo/events121/light.png" alt="Events121" class="themedComponent_mlkZ themedComponent--light_NVdE" height="40px" width="101px"><img src="/logo/events121/dark.png" alt="Events121" class="themedComponent_mlkZ themedComponent--dark_xIcU" height="40px" width="101px"></div></a><a class="navbar__item navbar__link" href="/pricing">Pricing</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a class="navbar__item navbar__link navbar-book-demo" href="/contact-us">Contact Us</a><a href="https://demo.bestflutterboilerplate.com/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link dev-portal-signup dev-portal-link">Live Demo<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col col--8"><article><header><h1>Introduction to Dyte</h1></header>
+<p>Dyte offers solutions for integrating high-quality video/voice calls into your
+web, mobile, and desktop applications. The platform provides APIs and SDKs to capture, distribute, record, and render high quality audio and video applications.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="supported-platforms">Supported Platforms<a href="#supported-platforms" class="hash-link" aria-label="Direct link to Supported Platforms" title="Direct link to Supported Platforms" translate="no">​</a></h2>
+<p>Dyte currently supports the following platforms:</p>
+<ul>
+<li class=""><strong>Mobile</strong>: Flutter, Android (Java/Kotlin), iOS (Objective-C/Swift), React Native</li>
+<li class=""><strong>Web</strong>: Javascript Core SDK + UI Kit for React JS, Angular, and Web Components for other frameworks.</li>
+<li class=""><strong>Desktop</strong>: Electron</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="components-of-dyte">Components of Dyte<a href="#components-of-dyte" class="hash-link" aria-label="Direct link to Components of Dyte" title="Direct link to Components of Dyte" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p><strong>Backend HTTP REST APIs</strong>: Your backend uses Dyte REST APIs to perform
+actions such as, create meetings, add participants to a meeting etc.</p>
+</li>
+<li class="">
+<p><strong>Frontend SDKs</strong>: Your applications bundle Dyte Core SDKs (and UI Kits) to
+acquire, transmit and play media, and manage network connections.</p>
+<ul>
+<li class=""><strong>Core SDKs</strong>: These SDKs empower you to create custom video and voice calls with real-time communication. They are highly customizable and easy to integrate.</li>
+<li class=""><strong>UI Kit</strong>: By utilizing Dyte&#x27;s prebuilt design library of UI components, you can seamlessly integrate video and voice calls into your app or website within minutes.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Developer Portal</strong>: The Developer Portal serves as a comprehensive platform, offering access to meeting logs, API key management, billing operations, and various other functionalities in one place.</p>
+</li>
+</ul>
+<h1>Getting Started With Dyte</h1>
+<p>This topic gives a quick
+walkthrough of the steps involved in integrating high-quality real-time
+communication features into your app using Dyte.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="integrate-dyte">Integrate Dyte<a href="#integrate-dyte" class="hash-link" aria-label="Direct link to Integrate Dyte" title="Direct link to Integrate Dyte" translate="no">​</a></h2>
+<ol>
+<li class="">
+<p>To get started with Dyte, you must first register in the
+<a href="https://dev.dyte.io" target="_blank" rel="noopener noreferrer" class="">Developer portal</a></p>
+</li>
+<li class="">
+<p>Copy the <a href="https://dev.dyte.io/apikeys" target="_blank" rel="noopener noreferrer" class="">API Keys</a> for your organization from
+the Developer portal. These API Keys are unique to your organization and are
+required to use Dyte REST APIs such as when instantiating a meeting</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="APIKeys" src="/assets/images/api-keys-0ca0bcbd0f86fdd235b638cb572a9b48.png" width="2114" height="1178" class="img_ev3q"></p>
+<ol start="3">
+<li class=""><a href="https://dev.dyte.io/roles-presets" target="_blank" rel="noopener noreferrer" class="">Create presets</a> using the Developer
+portal. A preset is a set of permissions and UI configurations that would be
+applied to a participant</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="PresetEditor" src="/assets/images/create-preset-40c05622c0bac1a165388eac561c6a4c.png" width="2422" height="1404" class="img_ev3q"></p>
+<ol start="4">
+<li class="">Create a Dyte meeting using the
+<a class="" href="/api#/operations/create_meeting">Create Meeting API</a>. This API returns a
+unique identifier for your meeting. <br></li>
+</ol>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>You may want to persist the meeting ID in your database.</p></div></div>
+<p><img decoding="async" loading="lazy" alt="Diagram explaining how Dyte works" src="/assets/images/how-dyte-works-v2-9f36c8cda047aabc8da766b57fc6e678.png" width="1920" height="1115" class="img_ev3q">
+<em>Diagram explaining how Dyte works</em></p>
+<ol start="5">
+<li class="">
+<p>After you&#x27;ve created the meeting, add each participant to the meeting using
+the <a class="" href="/api#/operations/add_participant">Add Participant API</a> (The <code>presetName</code>
+created earlier must be passed in the body of the Add Participant API
+request)</p>
+<p>The API response contains the user authentication token <code>authToken</code>.</p>
+</li>
+<li class="">
+<p>Use the <code>authToken</code> to initialize any of the frontend SDKs.</p>
+</li>
+</ol>
+<p>Dyte meetings do not have a date or time associated with them, so you can create
+them in advance or just when users need to join the meeting. The idea is that
+your backend controls when to distribute <code>authToken</code> and thus you can share the
+tokens with the users at the scheduled time.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="glossary">Glossary<a href="#glossary" class="hash-link" aria-label="Direct link to Glossary" title="Direct link to Glossary" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="meeting">Meeting<a href="#meeting" class="hash-link" aria-label="Direct link to Meeting" title="Direct link to Meeting" translate="no">​</a></h3>
+<p>A communication channel created on Dyte is termed as a <code>meeting</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="participants">Participants<a href="#participants" class="hash-link" aria-label="Direct link to Participants" title="Direct link to Participants" translate="no">​</a></h3>
+<p>Anyone who joins the <code>meeting</code>, whether as an actual user or a machine user</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="permission">Permission<a href="#permission" class="hash-link" aria-label="Direct link to Permission" title="Direct link to Permission" translate="no">​</a></h3>
+<p>A specific action allowed or not for a <code>participant</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="preset">Preset<a href="#preset" class="hash-link" aria-label="Direct link to Preset" title="Direct link to Preset" translate="no">​</a></h3>
+<p>A preset is a set of permissions and UI configurations that are applied to
+participants. The presets define how the meeting will look, feel, and behave for
+the participants.</p>
+<ul>
+<li class="">You can create presets for the Group Call and Webinar meeting type.</li>
+<li class="">You can set the maximum number of people on screen, the maximum number of
+people sharing the screen, provide permissions to create poll, disable
+participant video, disable participant audio, modify text color, configure
+plugins, and so on. Dyte also includes the following four prebuilt presets.
+These presets are pre-defined permissions and UI configurations for the
+participants.<!-- -->
+<ul>
+<li class="">webinar_viewer</li>
+<li class="">webinar_presenter</li>
+<li class="">group_call_host</li>
+<li class="">group_call_participant</li>
+</ul>
+</li>
+</ul>
+<p>You can choose to use the default prebuild presets if you don&#x27;t wish to create
+one.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recording">Recording<a href="#recording" class="hash-link" aria-label="Direct link to Recording" title="Direct link to Recording" translate="no">​</a></h3>
+<p>You can record the <code>meeting</code>, and get a video / audio file.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="livestreaming">Livestreaming<a href="#livestreaming" class="hash-link" aria-label="Direct link to Livestreaming" title="Direct link to Livestreaming" translate="no">​</a></h3>
+<p>You can livestream the <code>meeting</code> to other streaming platforms that support RTMP,
+like YouTube, Twitch, etc.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="analytics">Analytics<a href="#analytics" class="hash-link" aria-label="Direct link to Analytics" title="Direct link to Analytics" translate="no">​</a></h3>
+<p>Get analytics data around your <code>meetings</code>, like number of minutes, number of
+recorded minutes, number of participants, etc.</p></article></div><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#supported-platforms" class="table-of-contents__link toc-highlight">Supported Platforms</a></li><li><a href="#components-of-dyte" class="table-of-contents__link toc-highlight">Components of Dyte</a></li><li><a href="#integrate-dyte" class="table-of-contents__link toc-highlight">Integrate Dyte</a></li><li><a href="#glossary" class="table-of-contents__link toc-highlight">Glossary</a><ul><li><a href="#meeting" class="table-of-contents__link toc-highlight">Meeting</a></li><li><a href="#participants" class="table-of-contents__link toc-highlight">Participants</a></li><li><a href="#permission" class="table-of-contents__link toc-highlight">Permission</a></li><li><a href="#preset" class="table-of-contents__link toc-highlight">Preset</a></li><li><a href="#recording" class="table-of-contents__link toc-highlight">Recording</a></li><li><a href="#livestreaming" class="table-of-contents__link toc-highlight">Livestreaming</a></li><li><a href="#analytics" class="table-of-contents__link toc-highlight">Analytics</a></li></ul></li></ul></div></div></div></main></div><footer class="footer dark:bg-gray-900 bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12"><div><h3 class="font-bold text-lg mb-4">Events121</h3><p class="text-gray-400 text-sm leading-relaxed">Revolutionizing how people connect at events through seamless technology and genuine relationships.</p></div><div><h4 class="font-semibold mb-4">For Organizers</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-white transition">Create Event</a></li><li><a href="#" class="hover:text-white transition">Pricing</a></li><li><a href="#" class="hover:text-white transition">Documentation</a></li><li><a href="#" class="hover:text-white transition">Support</a></li></ul></div><div><h4 class="font-semibold mb-4">For Attendees</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-white transition">Find Events</a></li><li><a href="#" class="hover:text-white transition">How It Works</a></li><li><a href="#" class="hover:text-white transition">Safety</a></li><li><a href="#" class="hover:text-white transition">Community</a></li></ul></div><div><h4 class="font-semibold mb-4">Company</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="#" class="hover:text-white transition">About</a></li><li><a href="#" class="hover:text-white transition">Blog</a></li><li><a href="#" class="hover:text-white transition">Privacy</a></li><li><a href="#" class="hover:text-white transition">Terms</a></li></ul></div></div><div class="border-t border-gray-800 pt-8"><div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center"><div><h3 class="text-xl font-bold mb-4">Ready to Get Started?</h3><p class="text-gray-400 mb-4">Join thousands of organizers and attendees transforming their events.</p><div class="flex flex-col sm:flex-row gap-4"><a class="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white hover:text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-200 text-center no-underline hover:no-underline" href="/">Organize an Event</a><a class="inline-block px-6 py-3 border border-gray-600 text-white hover:text-white font-semibold rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-200 text-center no-underline hover:no-underline" href="/">Browse Events</a></div></div><div class="flex gap-4 justify-center md:justify-end"><a href="#" class="text-gray-400 hover:text-white transition text-2xl">f</a><a href="#" class="text-gray-400 hover:text-white transition text-2xl">𝕏</a><a href="#" class="text-gray-400 hover:text-white transition text-2xl">in</a><a href="#" class="text-gray-400 hover:text-white transition text-2xl">📸</a></div></div></div><div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500"><p>© <!-- -->2025<!-- --> Events121. All rights reserved.</p></div></div></footer></div>
+</body>
+</html>
